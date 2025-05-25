@@ -145,6 +145,10 @@
     <ClInclude Include="include\oath\utils\test_utils.h" />
     <ClInclude Include="include\oath\value\value.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\README-zh.md" />
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

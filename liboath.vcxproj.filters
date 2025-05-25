@@ -28,6 +28,9 @@
     <Filter Include="头文件\result">
       <UniqueIdentifier>{0c5dc2b8-c77e-4af8-830b-894f9dda0418}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\docs">
+      <UniqueIdentifier>{3da6b35c-d851-4824-86fb-3383327db747}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -53,5 +56,13 @@
     <ClInclude Include="include\oath\result\result.h">
       <Filter>头文件\result</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="docs\README-zh.md">
+      <Filter>资源文件\docs</Filter>
+    </None>
   </ItemGroup>
 </Project>
