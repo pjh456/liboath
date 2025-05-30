@@ -135,7 +135,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
     <ClCompile Include="test\result\result_test.cpp" />
     <ClCompile Include="test\value\value_test.cpp" />
   </ItemGroup>
