@@ -124,7 +124,7 @@ Result<bool, string> checkFileAvailable(Readonly<File> file)
 void handleFileData(Borrowed<File> file)
 {
     file.copy_self();
-    file.return(); // return the handle, or the handle won't go back to Owned<File>.
+    file.return_handle(); // return the handle, or the handle won't go back to Owned<File>.
 }
 
 void saveFile(Value<File> file)

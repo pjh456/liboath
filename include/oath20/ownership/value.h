@@ -3,7 +3,7 @@
 #include <type_traits>
 #include <concepts>
 
-namespace oath::value
+namespace oath
 {
 	template<typename T>
 		requires std::is_copy_constructible_v<T>

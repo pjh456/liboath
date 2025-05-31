@@ -5,8 +5,21 @@
 #include <iostream>
 #include <typeinfo>
 
+#include "config.h"
+
 #define FUNC_TIME_COUNTER(func) \
-    oath::utils::function_time_counter(#func, func)
+	try \
+	{ \
+		oath::utils::function_time_counter(#func, func); \
+	} \
+	catch (std::exception e) \
+	{ \
+		try { oath::detail::runtime_throw_exception(e, __FILE__, #func); } \
+		catch(std::runtime_error err) \
+		{ \
+			std::cout << err.what(); \
+		} \
+	}
 
 namespace oath::utils
 {

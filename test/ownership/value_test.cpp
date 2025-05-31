@@ -1,4 +1,4 @@
-#include "value/value.h"
+#include "ownership/value.h"
 #include "utils/test_utils.h"
 #include "utils/concept_utils.h"
 
@@ -6,7 +6,7 @@
 #include <cassert>
 #include <string>
 
-namespace oath::value::test
+namespace oath::test
 {
 	template<typename T>
 		requires(Addable<T>, Comparable<T>)

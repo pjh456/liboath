@@ -8,7 +8,7 @@
 
 #include "utils/concept_utils.h"
 
-namespace oath::result
+namespace oath
 {
 	template<typename T, typename E>
 		requires (!std::is_same_v<T, E>)

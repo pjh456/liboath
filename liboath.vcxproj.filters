@@ -16,12 +16,6 @@
     <Filter Include="源文件\test">
       <UniqueIdentifier>{a5e28379-1728-480b-9437-ff2c4b72c20e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\test\value">
-      <UniqueIdentifier>{f8494e56-cebf-464c-b469-7dd961b294e9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\value">
-      <UniqueIdentifier>{efce7536-4ed3-4204-9222-bb1d5052fca1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\utils">
       <UniqueIdentifier>{516b0de6-a186-434a-b256-a66c1142b25e}</UniqueIdentifier>
     </Filter>
@@ -31,27 +25,54 @@
     <Filter Include="资源文件\docs">
       <UniqueIdentifier>{3da6b35c-d851-4824-86fb-3383327db747}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\ownership">
+      <UniqueIdentifier>{2e0f0436-8fd8-4cdd-af9c-3dc59c21a558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\test\ownership">
+      <UniqueIdentifier>{f8494e56-cebf-464c-b469-7dd961b294e9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test\value\value_test.cpp">
-      <Filter>源文件\test\value</Filter>
-    </ClCompile>
     <ClCompile Include="test\result\result_test.cpp">
       <Filter>源文件\test</Filter>
     </ClCompile>
+    <ClCompile Include="test\ownership\value_test.cpp">
+      <Filter>源文件\test\ownership</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ownership\owned_test.cpp">
+      <Filter>源文件\test\ownership</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\oath\value\value.h">
-      <Filter>头文件\value</Filter>
-    </ClInclude>
-    <ClInclude Include="include\oath\utils\test_utils.h">
-      <Filter>头文件\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\oath\utils\concept_utils.h">
-      <Filter>头文件\utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\oath\result\result.h">
+    <ClInclude Include="include\oath20\result\result.h">
       <Filter>头文件\result</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\utils\concept_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\utils\test_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\ownership\value.h">
+      <Filter>头文件\ownership</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\ownership\owned.h">
+      <Filter>头文件\ownership</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\ownership\handle.h">
+      <Filter>头文件\ownership</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\ownership\borrow_stack_node.h">
+      <Filter>头文件\ownership</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\utils\runtime_check_utils.h">
+      <Filter>头文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oath20\ownership\borrowed.h">
+      <Filter>头文件\ownership</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

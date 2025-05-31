@@ -5,14 +5,14 @@
 #include <cassert>
 #include <string>
 
-namespace oath::result::test
+namespace oath::test
 {
 	void test_result_get()
 	{
 		auto func = [](bool val) {
 			return val ?
-				oath::result::Result<bool, std::string>::ok(true) :
-				oath::result::Result<bool, std::string>::err(std::string("false"));
+				oath::Result<bool, std::string>::ok(true) :
+				oath::Result<bool, std::string>::err(std::string("false"));
 			};
 
 		auto result1 = func(true);
@@ -26,8 +26,8 @@ namespace oath::result::test
 	{
 		auto func = [](bool val) {
 			return val ?
-				oath::result::Result<bool, std::string>::ok(true) :
-				oath::result::Result<bool, std::string>::err(std::string("false"));
+				oath::Result<bool, std::string>::ok(true) :
+				oath::Result<bool, std::string>::err(std::string("false"));
 			};
 
 		auto map_func1 = [](const bool& val) { return val ? 1 : 0; };
@@ -47,8 +47,8 @@ namespace oath::result::test
 	{
 		auto func = [](const bool& val) {
 			return val ?
-				oath::result::Result<bool, std::string>::ok(true) :
-				oath::result::Result<bool, std::string>::err(std::string("false"));
+				oath::Result<bool, std::string>::ok(true) :
+				oath::Result<bool, std::string>::err(std::string("false"));
 			};
 
 		auto match_func1 = [](bool&& val) { return true; };
@@ -67,9 +67,4 @@ namespace oath::result::test
 		FUNC_TIME_COUNTER(test_result_map);
 		getchar();
 	}
-}
-
-int main()
-{
-	oath::result::test::test_result();
 }
