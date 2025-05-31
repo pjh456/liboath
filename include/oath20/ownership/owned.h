@@ -13,14 +13,14 @@ namespace oath
 
 		explicit Owned(const T& value) : handle(new Handle<T>(value)) {}
 
-	public:
 		explicit Owned(Handle<T>* _handle) : handle(_handle) {}
+	public:
 		explicit Owned(Owned<T>&& other) noexcept : handle(other.handle) { other.handle = nullptr; }
 
 		Owned(const Owned<T>&) = delete;
 		Owned& operator=(const Owned<T>&) = delete;
 
-		~Owned() { delete handle; }
+		~Owned() { OATH_CHECK(handle != nullptr); delete handle; }
 
 		static Owned make_owned(T _data) { return { _data }; }
 

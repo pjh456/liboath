@@ -12,7 +12,7 @@ namespace oath
 		Handle<T>* handle;
 
 	public:
-		Borrowed(Handle<T>* h): handle(h) {}
+		Borrowed(Handle<T>* h) : handle(h) {}
 
 		~Borrowed() { if (handle) handle.return_handle(); }
 

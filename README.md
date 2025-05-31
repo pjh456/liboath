@@ -1,6 +1,6 @@
 # Oath: A Safer Ownership-Oriented Abstraction for Modern C++
 
-[中文版文档](docs/README-zh.md) • [English Docs (coming soon)](docs/README-en.md)
+[中文版文档](docs/zh/README.md) • [English Docs (a bit more outdated)](docs/en/README.md)
 
 ## Project Introduction
 
