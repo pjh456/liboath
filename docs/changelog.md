@@ -45,3 +45,14 @@
 - 修复了更新日志中格式不统一的问题。
 
 ---
+
+## [0.0.5] - 2025-05-31
+### Added
+- 添加了设计思路文档 [design_note.md](zh/design_note.md)。
+- 添加了类型行为解释文档 [behaviours.md](zh/behaviours) 中关于 ``Borrowed<T>`` 的部分。
+
+### Changed
+- 修改了 [README.md](zh/README.md) 里的命名规范速览模块，使其更简洁易懂。
+- 修改了类型行为解释文档 [behaviours.md](zh/behaviours) 中关于 ``Owned<T>`` 的部分表述。
+
+---
